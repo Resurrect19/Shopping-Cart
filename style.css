@@ -18,8 +18,9 @@ nav{
     position: fixed;
     left: 0;
     top: 0;
-    background-color: var(--grey);
+    background-color: var(--light);
     box-shadow: 0rem 1rem 3rem var(--dark);
+    z-index: 100;
 }
 .nav-container{
     display: flex;
@@ -30,4 +31,76 @@ nav{
 }
 .nav-container a{
     color: black;
+}
+.logo{
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: cursive;
+}
+#icon-cart{
+   background-color: var(--light);
+   color: black;
+   margin-bottom: 1rem;
+}
+.shop{
+   padding: 4rem 2rem;
+   margin-top: 5rem;
+}
+.title{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 1rem 0;
+}
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(520px, auto ));
+    gap: 1.5rem;
+}
+.product-box{
+    position: relative;
+}
+.product-box:hover{
+    
+    box-shadow: 0.5rem 0.5rem 1rem var(--dark);
+    transition: all 0.5s ease;
+}
+.product-img{
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 10px;
+}
+.product-title{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.price{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+.fa-cart-shopping{
+    font-size: 2rem;
+    font-weight: bolder;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: black;
+    padding: 10px;
+    color: var(--light);
+}
+.fa-cart-shopping:hover{
+    background-color: var(--dark);
+}
+/* -------------side cart------------------- */
+.side-cart{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: white;
+    width: 100rem;
 }
