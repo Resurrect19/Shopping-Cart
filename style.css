@@ -122,7 +122,10 @@ nav{
     grid-template-columns: 32% 55% 10%;
     gap: 1rem;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 3rem;
+    border: 0.2rem solid var(--dark);
+    border-radius: 1rem;
+    padding: 0.7rem;
 
 }
 .sidecart-img{
